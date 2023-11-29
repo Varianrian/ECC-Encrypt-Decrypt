@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#282828]">
+  <h1 class="text-3xl font-bold text-center text-white">
+    ECC
+  </h1>
+  <h2 class="text-2xl font-bold text-center text-white">Encryption & Decryption</h2>
+  <div class="grid grid-cols-2 justify-center mt-6 gap-6">
+    <div class="bg-[#1A1A1A] rounded-md text-white p-4 min-w-md ml-auto">
+      <form class="flex flex-col gap-2">
+        <div class="flex space-x-2 items-center">
+          <label for="message">p</label>
+          <input type="text" name="message" id="message" class="rounded-md p-1 bg-[#393939] text-white" />
+        </div>
+        <div class="flex space-x-2 items-center">
+          <label for="message">a</label>
+          <input type="text" name="message" id="message" class="rounded-md p-1 bg-[#393939] text-white" />
+        </div>
+        <div class="flex space-x-2 items-center">
+          <label for="message">b</label>
+          <input type="text" name="message" id="message" class="rounded-md p-1 bg-[#393939] text-white" />
+        </div>
+        <div class="flex space-x-2 items-center">
+          <label for="message">q</label>
+          <input type="text" name="message" id="message" class="rounded-md p-1 bg-[#393939] text-white" />
+        </div>
+        <div class="flex space-x-2 items-center">
+          <label for="message">r</label>
+          <input type="text" name="message" id="message" class="rounded-md p-1 bg-[#393939] text-white" />
+        </div>
+        <button class="bg-[#41C956] rounded-md p-1">Generate Random</button>
+        <div class="flex space-x-2 items-center">
+          <label for="message">Method</label>
+          <select name="method" id="method" class="rounded-md p-1 bg-[#393939] text-white w-full">
+            <option value="encrypt">Encrypt</option>
+            <option value="decrypt">Decrypt</option>
+          </select>
+        </div>
+        <div class="flex space-x-2 items-center">
+          <label for="message">text</label>
+          <textarea name="message" id="message" class="rounded-md p-1 bg-[#393939] text-white w-full"></textarea>
+          <input type="radio" name="message" id="message" class="rounded-md p-1 bg-[#393939] text-white" /> Text
+          <input type="radio" name="message" id="message" class="rounded-md p-1 bg-[#393939] text-white" /> File
+        </div>
+        <button class="bg-[#41C956] rounded-md p-1">Encrypt/Decrypt</button>
+      </form>
+    </div>
+    <div class="bg-[#1A1A1A] rounded-md text-white p-4 min-w-md mr-auto">
+      <label for="message">Result</label>
+      <textarea name="message" id="message" class="rounded-md p-1 bg-[#393939] text-white w-full"></textarea>
+      <button class="bg-[#3283D5] rounded-md p-1">Download .txt</button>
+    </div>
+  </div>
+</body>
+
+</html>
