@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
 </head>
 
 <body class="bg-[#282828]">
@@ -17,44 +18,59 @@
       <form class="flex flex-col gap-2">
         <div class="flex space-x-2 items-center">
           <label for="message">p</label>
-          <input type="text" name="message" id="message" class="rounded-md p-1 bg-[#393939] text-white" />
+          <input type="text" name="message" id="p_message" class="rounded-md p-1 bg-[#393939] text-white" />
         </div>
         <div class="flex space-x-2 items-center">
           <label for="message">a</label>
-          <input type="text" name="message" id="message" class="rounded-md p-1 bg-[#393939] text-white" />
+          <input type="text" name="message" id="a_message" class="rounded-md p-1 bg-[#393939] text-white" />
         </div>
         <div class="flex space-x-2 items-center">
           <label for="message">b</label>
-          <input type="text" name="message" id="message" class="rounded-md p-1 bg-[#393939] text-white" />
+          <input type="text" name="message" id="b_message" class="rounded-md p-1 bg-[#393939] text-white" />
         </div>
         <div class="flex space-x-2 items-center">
-          <label for="message">q</label>
-          <input type="text" name="message" id="message" class="rounded-md p-1 bg-[#393939] text-white" />
+          <label for="message">c</label>
+          <input type="text" name="message" id="c_message" class="rounded-md p-1 bg-[#393939] text-white" />
         </div>
+       
+        </form>
+        <br>
+        <button class="bg-[#41C956] rounded-md p-1" onclick="key()">Generate Random</button>
+        <br>
+        <br>
+        <form class="flex flex-col gap-2">
+          <div class="flex space-x-2 items-center">
+            <label for="message">q</label>
+            <input type="text" name="message" id="q_message" class="rounded-md p-1 bg-[#393939] text-white" />
+          </div>
+          <div class="flex space-x-2 items-center">
+            <label for="message">r</label>
+            <input type="text" name="message" id="r_message" class="rounded-md p-1 bg-[#393939] text-white" />
+          </div>
         <div class="flex space-x-2 items-center">
-          <label for="message">r</label>
-          <input type="text" name="message" id="message" class="rounded-md p-1 bg-[#393939] text-white" />
-        </div>
-        <button class="bg-[#41C956] rounded-md p-1">Generate Random</button>
-        <div class="flex space-x-2 items-center">
+          
           <label for="message">Method</label>
-          <select name="method" id="method" class="rounded-md p-1 bg-[#393939] text-white w-full">
+          <select name="method" id="Pilmethod" class="rounded-md p-1 bg-[#393939] text-white w-full">
             <option value="encrypt">Encrypt</option>
             <option value="decrypt">Decrypt</option>
           </select>
         </div>
+        
         <div class="flex space-x-2 items-center">
           <label for="message">text</label>
-          <textarea name="message" id="message" class="rounded-md p-1 bg-[#393939] text-white w-full"></textarea>
+          <textarea name="message" id="input_message" class="rounded-md p-1 bg-[#393939] text-white w-full"></textarea>
           <input type="radio" name="message" id="message" class="rounded-md p-1 bg-[#393939] text-white" /> Text
           <input type="radio" name="message" id="message" class="rounded-md p-1 bg-[#393939] text-white" /> File
         </div>
-        <button class="bg-[#41C956] rounded-md p-1">Encrypt/Decrypt</button>
       </form>
+      <br>
+      <button class="bg-[#41C956] rounded-md p-1" onclick="crypto()">Encrypt/Decrypt</button>
+      <br>
+
     </div>
     <div class="bg-[#1A1A1A] rounded-md text-white p-4 min-w-md mr-auto">
       <label for="message">Result</label>
-      <textarea name="message" id="message" class="rounded-md p-1 bg-[#393939] text-white w-full"></textarea>
+      <textarea disabled name="message"  class="rounded-md p-1 bg-[#393939] text-white w-full" id="hasil_message" ></textarea>
       <button class="bg-[#3283D5] rounded-md p-1">Download .txt</button>
     </div>
   </div>
